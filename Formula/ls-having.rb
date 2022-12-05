@@ -5,21 +5,21 @@
 class LsHaving < Formula
   desc "Command 'ls-having' can list directories having specified flag files and optionally meeting other specified conditions."
   homepage "https://github.com/handy-common-utils/ls-having"
-  version "0.0.3"
+  version "0.0.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.3/ls-having_0.0.3_Darwin_arm64.tar.gz"
-      sha256 "ab9c6d704830e6c2fb38575432a26197a8c9ceba1449b8f724a5754b0071d808"
+      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.4/ls-having_0.0.4_Darwin_arm64.tar.gz"
+      sha256 "be4418f805640121d63df100cf3be2b546d99319f2f395701931ae3c71e7407b"
 
       def install
         bin.install "ls-having"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.3/ls-having_0.0.3_Darwin_x86_64.tar.gz"
-      sha256 "42715b4e5221b71ff5dd14fc91e07bd2a3de4e563c897f460cb45d549e667a23"
+      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.4/ls-having_0.0.4_Darwin_x86_64.tar.gz"
+      sha256 "5dd16b37cc0a994afdc46592a2e1e8ab2b23849853e93d8faf47dee2b243804c"
 
       def install
         bin.install "ls-having"
@@ -29,16 +29,16 @@ class LsHaving < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.3/ls-having_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "35265631f7394e954e6951ecab7b1979cda45bf6a15235ba84f2a12f44aa9fc3"
+      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.4/ls-having_0.0.4_Linux_x86_64.tar.gz"
+      sha256 "a2097f5c7d539d4b8a9582c745c32e3b33cc373997e7e23439b9e5e38dcb1b05"
 
       def install
         bin.install "ls-having"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.3/ls-having_0.0.3_Linux_arm64.tar.gz"
-      sha256 "d1a76a7c089fe215f5d8b7410ad23e1da38e500a996ac9ffacdc7d38e0fa6f46"
+      url "https://github.com/handy-common-utils/ls-having/releases/download/v0.0.4/ls-having_0.0.4_Linux_arm64.tar.gz"
+      sha256 "7a62c3d61b6ae8a4204a36283170afd982d8e4daab0c8457220f625abae4664f"
 
       def install
         bin.install "ls-having"
