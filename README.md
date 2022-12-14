@@ -1,2 +1,2 @@
 # homebrew-tap
-Homebrew Tap for hand-common-utils
+Homebrew Tap for handy-common-utils
