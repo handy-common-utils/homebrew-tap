@@ -11,7 +11,7 @@ class AwsServerlessDataflow < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.2.9-3/aws-serverless-dataflow_1.2.9-3_darwin_arm64.tar.gz"
-      sha256 "056eb3b8dab56198ac95a5803eca767bf138a1ea3c0ee513d3b91cdb2f4e0e72"
+      sha256 "2cdb3cb2c50794f6a86c2c5ff1419e6926ef4016c8c46909396a6079a857bd5c"
 
       def install
         bin.install "aws-serverless-dataflow"
@@ -19,7 +19,7 @@ class AwsServerlessDataflow < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.2.9-3/aws-serverless-dataflow_1.2.9-3_darwin_amd64.tar.gz"
-      sha256 "8e633bcbc7d341b2de41dd271ad7b5d4f327d65fe6fd64323e4b5d9ad469374d"
+      sha256 "ecaac1ab49efc495487b6aed1c4063193e2c7fae541f20d17b7686741e832b90"
 
       def install
         bin.install "aws-serverless-dataflow"
@@ -30,7 +30,7 @@ class AwsServerlessDataflow < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.2.9-3/aws-serverless-dataflow_1.2.9-3_linux_arm64.tar.gz"
-      sha256 "9043b6e0224f40d3b4a110d37da666a19055e783863a0311098fbf2aae408a08"
+      sha256 "2587ebafe498b7c7371b70ab611f1bd882caccf93454d6982cedb96256cf51fd"
 
       def install
         bin.install "aws-serverless-dataflow"
@@ -38,7 +38,7 @@ class AwsServerlessDataflow < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.2.9-3/aws-serverless-dataflow_1.2.9-3_linux_amd64.tar.gz"
-      sha256 "e9f88c4c682426243493349c6dd14ec87af12f53472006799cb7f6cec549b987"
+      sha256 "d20e10c9c71db8cb3f96c9b1b5f43ccae04893623ba0c7112dd4310a33282713"
 
       def install
         bin.install "aws-serverless-dataflow"
