@@ -5,21 +5,21 @@
 class ApigSwaggerUi < Formula
   desc "Command line tool for generating OpenAPI spec and Swagger UI from AWS API Gateway"
   homepage "https://github.com/james-hu/apig-swagger-ui"
-  version "1.2.2"
+  version "1.2.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.2/apig-swagger-ui_1.2.2_darwin_arm64.tar.gz"
-      sha256 "2f2b9e6f506f2793989fdbc3024913f35fcc6fe238c28974bcb1d696541a4872"
+      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.3/apig-swagger-ui_1.2.3_darwin_arm64.tar.gz"
+      sha256 "9087676ec963a2ad7b3c768af3452682e42d8c28d5b999f347138cabf20fc8e6"
 
       def install
         bin.install "apig-swagger-ui"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.2/apig-swagger-ui_1.2.2_darwin_amd64.tar.gz"
-      sha256 "54bc5eca148073375cb1c59262cde1f7a224105990c47d8dd8a70dc02b5066af"
+      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.3/apig-swagger-ui_1.2.3_darwin_amd64.tar.gz"
+      sha256 "617a58c139c392bc19526e60344a0757025dc798ad1b68d3d4a9f2ff6b1b0e6c"
 
       def install
         bin.install "apig-swagger-ui"
@@ -28,17 +28,17 @@ class ApigSwaggerUi < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.2/apig-swagger-ui_1.2.2_linux_arm64.tar.gz"
-      sha256 "d2ff49c8667d5820e7389fa3629953a7f06c3119d2eaa8e5220c18586a7f8043"
+    if Hardware::CPU.intel?
+      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.3/apig-swagger-ui_1.2.3_linux_amd64.tar.gz"
+      sha256 "b2f3ed3e71f1ebba6adf5a8351980ca0b4630d4802726da1d28fd9dc6eee3f0e"
 
       def install
         bin.install "apig-swagger-ui"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.2/apig-swagger-ui_1.2.2_linux_amd64.tar.gz"
-      sha256 "d74298eef8d0086e344f979fcad33e386e094dc988845db7daa3f74a447b845a"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.2.3/apig-swagger-ui_1.2.3_linux_arm64.tar.gz"
+      sha256 "47531c1755fc953a8492e929730daa25aea9e36591f54a996833a746cbd8bdb7"
 
       def install
         bin.install "apig-swagger-ui"
