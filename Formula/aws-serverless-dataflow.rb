@@ -5,21 +5,21 @@
 class AwsServerlessDataflow < Formula
   desc "A command-line tool for visualisation of AWS serverless (Lambda, API Gateway, SNS, SQS, etc.) dataflow"
   homepage "https://github.com/james-hu/aws-serverless-dataflow"
-  version "1.3.6"
+  version "1.4.0"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.3.6/aws-serverless-dataflow_1.3.6_darwin_arm64.tar.gz"
-      sha256 "ea1777afa6eba514b9fc845f479e26ee5e2f7800ba33f9a03143e61cb8174068"
+    if Hardware::CPU.intel?
+      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.4.0/aws-serverless-dataflow_1.4.0_darwin_amd64.tar.gz"
+      sha256 "f85bb68f14d227e33e7157a8ddce2f1a24c4f74550fc9177d0ca44d120c4a6b6"
 
       def install
         bin.install "aws-serverless-dataflow"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.3.6/aws-serverless-dataflow_1.3.6_darwin_amd64.tar.gz"
-      sha256 "97c0c89db5d3eb0106ff309f18c9d3af5f434dad030daa6e7cd71ad10703ad9b"
+    if Hardware::CPU.arm?
+      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.4.0/aws-serverless-dataflow_1.4.0_darwin_arm64.tar.gz"
+      sha256 "85d33c1a402dff9df688957be094c85ebe2ae0547a3fd9cb28a930e0b2315d4c"
 
       def install
         bin.install "aws-serverless-dataflow"
@@ -29,16 +29,16 @@ class AwsServerlessDataflow < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.3.6/aws-serverless-dataflow_1.3.6_linux_arm64.tar.gz"
-      sha256 "999c9f96b8eeb52a31fd70f32cbf78b3eadf6b269a7ca30c470114e9c7d1b136"
+      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.4.0/aws-serverless-dataflow_1.4.0_linux_arm64.tar.gz"
+      sha256 "d30b58264eba3ef87ba587e29f2bc7e54c41bef6864142c313e4d5d326b78ee0"
 
       def install
         bin.install "aws-serverless-dataflow"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.3.6/aws-serverless-dataflow_1.3.6_linux_amd64.tar.gz"
-      sha256 "fb917eea276f5927a28568cb86917d2c269890eb8820754569fd9f3709c0c7ba"
+      url "https://github.com/james-hu/aws-serverless-dataflow/releases/download/v1.4.0/aws-serverless-dataflow_1.4.0_linux_amd64.tar.gz"
+      sha256 "23119da38bac9f49dc658b94197bb398800f057b30fbaa5aabaa37c1ea864317"
 
       def install
         bin.install "aws-serverless-dataflow"
