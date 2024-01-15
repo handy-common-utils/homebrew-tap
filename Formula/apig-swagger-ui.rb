@@ -11,7 +11,7 @@ class ApigSwaggerUi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.4.0/apig-swagger-ui_1.4.0_darwin_arm64.tar.gz"
-      sha256 "92a89c609b652bacc0ba3e0f9daaca53f763cda950893006eeaf2d31ee627978"
+      sha256 "75ff9b35b882e14e13dee40016c195ce8847167d093b4d4e5bc6220affa8c234"
 
       def install
         bin.install "apig-swagger-ui"
@@ -19,7 +19,7 @@ class ApigSwaggerUi < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.4.0/apig-swagger-ui_1.4.0_darwin_amd64.tar.gz"
-      sha256 "52b88357171969e6b12837959700326640750a09347e2b41115bf71077410f21"
+      sha256 "756664ed750bcc2e8e2c39aae90a8eea00ac0ff223db39f96845f5e87211b25b"
 
       def install
         bin.install "apig-swagger-ui"
@@ -28,17 +28,17 @@ class ApigSwaggerUi < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.4.0/apig-swagger-ui_1.4.0_linux_arm64.tar.gz"
-      sha256 "7e97c2e54dd16bf1f62d17912f443aec3c7b1a9b8c9435d6e5b236f5db0ef579"
+    if Hardware::CPU.intel?
+      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.4.0/apig-swagger-ui_1.4.0_linux_amd64.tar.gz"
+      sha256 "8c79edf643644264c4c1b7313c25878fb64130580a06b229e0dca92437dc34b6"
 
       def install
         bin.install "apig-swagger-ui"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.4.0/apig-swagger-ui_1.4.0_linux_amd64.tar.gz"
-      sha256 "627aa567835f317dd6a0271a7ef95b69dc9d5ca8152e4e1bb9ad992271372044"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/james-hu/apig-swagger-ui/releases/download/v1.4.0/apig-swagger-ui_1.4.0_linux_arm64.tar.gz"
+      sha256 "0353e3ca345076430ea6cf172f9cb6538b5a78efc4a7e3a068f4b4169d0f20fe"
 
       def install
         bin.install "apig-swagger-ui"
